@@ -1,0 +1,89 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify75c136e3825f4-staging-172813-authRole",
+      "UnauthRoleArn": "arn:aws:iam::543098890276:role/amplify-amplify75c136e3825f4-staging-172813-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::543098890276:role/amplify-amplify75c136e3825f4-staging-172813-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-amplify75c136e3825f4-staging-172813-deployment",
+      "UnauthRoleName": "amplify-amplify75c136e3825f4-staging-172813-unauthRole",
+      "StackName": "amplify-amplify75c136e3825f4-staging-172813",
+      "StackId": "arn:aws:cloudformation:eu-central-1:543098890276:stack/amplify-amplify75c136e3825f4-staging-172813/66f91ea0-5e24-11ee-ad26-06ef7f81c828",
+      "AmplifyAppId": "d1pyc8vuy3y525"
+    }
+  },
+  "auth": {
+    "Jobvermittlung": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "eu-central-1_0hIkk5Yb7",
+        "AppClientIDWeb": "2p1at8s2vdulm45s2nggv2grn4",
+        "AppClientID": "372jslv3m19ttd1kpqdmvetfk5",
+        "IdentityPoolId": "eu-central-1:d3db910b-ecab-4ee3-b8c4-141f0a766aad",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-central-1:543098890276:userpool/eu-central-1_0hIkk5Yb7",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "Jobvermittlung"
+      },
+      "lastPushTimeStamp": "2023-09-28T19:47:22.664Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify75c136e3825f4-staging-172813-deployment/amplify-cfn-templates/auth/Jobvermittlung-cloudformation-template.json",
+        "logicalId": "authJobvermittlung"
+      }
+    }
+  },
+  "api": {
+    "Jobvermittlung": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "j2y2v4mkbrhzzacml5ypwno4xy",
+        "GraphQLAPIEndpointOutput": "https://zsiaptymejff5nrowfshh24j7i.appsync-api.eu-central-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-qagryzsvfrgw5enmudtobs7nmm"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify75c136e3825f4-staging-172813-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiJobvermittlung"
+      },
+      "lastPushTimeStamp": "2023-09-28T19:47:23.260Z",
+      "lastPushDirHash": "NLJiL6wSEfDgN6UKQMlxRLPp04o="
+    }
+  }
+}

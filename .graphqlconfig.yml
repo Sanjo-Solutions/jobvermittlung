@@ -1,0 +1,15 @@
+projects:
+  Jobvermittlung:
+    schemaPath: src/amplify/backend/api/Jobvermittlung/build/schema.graphql
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./src/amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: API.ts
+        docsFilePath: graphql
+        region: eu-central-1
+        apiId: null
+        maxDepth: 2
