@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify75c136e3825f4-staging-172813-authRole",
+      "UnauthRoleArn": "arn:aws:iam::543098890276:role/amplify-amplify75c136e3825f4-staging-172813-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::543098890276:role/amplify-amplify75c136e3825f4-staging-172813-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-amplify75c136e3825f4-staging-172813-deployment",
+      "UnauthRoleName": "amplify-amplify75c136e3825f4-staging-172813-unauthRole",
+      "StackName": "amplify-amplify75c136e3825f4-staging-172813",
+      "StackId": "arn:aws:cloudformation:eu-central-1:543098890276:stack/amplify-amplify75c136e3825f4-staging-172813/66f91ea0-5e24-11ee-ad26-06ef7f81c828",
+      "AmplifyAppId": "d1pyc8vuy3y525"
+    },
+    "categories": {
+      "auth": {
+        "Jobvermittlung": {}
+      }
+    }
+  }
+}
